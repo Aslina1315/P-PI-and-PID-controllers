@@ -52,12 +52,12 @@ The addition of an integral term to the controller ( ) tends to help reduce stea
 	Determine the steady state error and analyse the controllers.
 ## Program: 
 ### Without Controller (Open loop System)
- num=[1]
- den=[1 10 20]
- sys=tf(num,den)
- subplot(2,2,1)
- step(sys)
- title('open loop system')
+num=[1]
+den=[1 10 20]
+sys=tf(num,den)
+subplot(2,2,1)
+step(sys)
+title('open loop system')
 
 ### With P-Controller
 Kp=300;
@@ -76,6 +76,7 @@ G2=feedback(c2*sys,1)
 subplot(2,2,3)
 step(G2)
 title('Pi-CONTROLLER')
+
 
 ### With PID Controller
 Kp=350;
